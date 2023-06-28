@@ -22,7 +22,7 @@ ul a {
     display: block;
     width: 200px;
     height: 40px;
-    background: #f7b600 url(imagens/menu.png);
+    background: #f7b600 url(../imagens/menu.png);
     color: black;
     text-decoration: none;
     text-indent: 40px;
