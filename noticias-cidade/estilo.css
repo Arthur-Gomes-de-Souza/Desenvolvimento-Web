@@ -15,7 +15,6 @@ body {
 
 #topo {
     height: 150px;
-    border: 1px solid red;
     background: url(imagens/detalhe-topo.png) no-repeat right top;
     padding-top: 25px;
 }
@@ -25,4 +24,221 @@ body {
     height: 66px;
     background: url(imagens/logo.png) no-repeat center;
     text-indent: -3000px;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+a:link, a:visited {
+    color: #b10333;
+    padding: 2px;
+}
+
+a:hover {
+    color: #e50040;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topo ul {
+    background: #b10333;
+    margin-top: 30px;
+    float: left;
+}
+
+#topo ul li {
+    float: left;
+}
+
+#topo ul a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: white;
+    background: url(imagens/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a {
+    background: none;
+}
+
+#topo ul a:hover {
+    color: #69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos
+{
+    color: white;
+    background: #de003e;
+    cursor: text;
+}
+
+#conteudo {
+    background: #f5f5f5;
+    margin-top: 60px;
+}
+
+#primario {
+    float: left;
+    width: 270px;
+    margin: 0 0 20px 195px;
+}
+
+#duas-colunas #primario {
+    float: left;
+    width: 555px;
+    margin: 0 0 20px 195px;
+}
+#uma-coluna #primario {
+    float: left;
+    width: 750px;
+    margin: 0 0 20px 0;
+}
+
+#secundario {
+    float: left;
+    width: 270px;
+    margin: 0 0 20px 15px;
+}
+
+#lateral {
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
+/* FORMATAR CAIXA */
+.caixa {
+    background: #f3f3f3 url(imagens/fundo-caixa.png);
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.caixa-conteudo {
+    background: white;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 1.1em;
+    background: #294c71;
+    color: white;
+    padding: 5px;
+}
+
+/* FORMATAR MENUS LATERAIS */
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+    color: #a1a1a1;
+    background: #f9f9f9 url(imagens/marcador.png) no-repeat left;
+    padding-left: 20px;
+}
+
+/* FORMATANDO FORMULÁRIOS */
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    font-size: 0.9em;
+    background-color: white;
+    padding: 5px;
+    width: 125px;
+}
+
+input[type="submit"] {
+    width: 80px;
+    color: white;
+    background-color: #b10333;
+    border: 2px solid #870529;
+    padding: 5px;
+    margin: 3px 0 0 30px;
+}
+
+/* FORMATAR IMAGENS */
+img.imagem-principal {
+    border: 3px solid #dfdfdf;
+    width: 98%;
+}
+
+/* FORMATAR CABEÇALHOS */
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3 {
+    background-color: #b10333;
+    color: white;
+}
+
+.entrevista h3 {
+    background-color: #de003e;
+}
+
+/* FORMATAR LISTA DE NOTÍCIAS */
+#lista-noticia li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+
+#lista-noticia li a img {
+    float: left;
+    margin: 5px;
+}
+
+#lista-noticia li a {
+    text-decoration: none;
+}
+
+#lista-noticia li a h3 {
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#lista-noticia li a p {
+    font-size: 0.7em;
+    color: #000;
+}
+
+#lista-noticia li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+/* FORMATANDO RODAPÉ */
+#container-rodape {
+    background: #294c71;
+    padding: 20px;
+}
+
+#rodape {
+    width: 750px;
+    margin: 0 auto;
+    color: white;
 }
