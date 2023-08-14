@@ -1,0 +1,25 @@
+@keyframes animacao-caixa {
+    from {
+        background-color: gray;
+        top: 0;
+        left: 0;
+    }
+    to {
+        background-color: blue;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+#caixa {
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    position: relative;
+    animation-name: animacao-caixa;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
