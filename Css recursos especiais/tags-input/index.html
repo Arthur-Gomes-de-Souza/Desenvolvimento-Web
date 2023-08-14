@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novas tags de input</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <form action="">
+        <!-- INPUT NOME -->
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required autofocus>
+        <br><br>
+
+        <!-- INPUT EMAIL -->
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+        <br><br>
+
+        <!-- INPUT NÚMERO -->
+        <label for="numero">Número:</label>
+        <input type="number" name="numero" id="numero" min="0" max="10" step="2" placeholder="Digite seu número" required>
+        <br><br>
+
+        <!-- INPUT URL -->
+        <label for="url">URL:</label>
+        <input type="url" name="url" id="url" placeholder="Digite sua url" required>
+        <br><br>
+
+        <!-- INPUT PESQUISA -->
+        <label for="pesquisa">Pesquisa:</label>
+        <input type="search" name="pesquisa" id="pesquisa" placeholder="Digite sua pesquisa" required>
+        <br><br>
+
+        <!-- INPUT RANGE -->
+        <label for="range">Range:</label>
+        <input type="range" id="range" min="1" max="10" value="5">
+        <br><br>
+
+        <!-- INPUT DATA -->
+        <label for="data">Data:</label>
+        <input type="date" name="data" id="data" required>
+        <br><br>
+
+        <!-- INPUT COR -->
+        <label for="cor">Cor:</label>
+        <input type="color" name="cor" id="cor" required>
+        <br><br>
+
+
+
+        <input type="submit" value="Enviar">
+
+    </form>
+    
+</body>
+</html>
