@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Flexible Box Layout</title>
+
+    <style>
+
+        #conteudo {
+            background: #dcdcdc;
+            height: 400px;
+            display: flex;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background: white;
+            border: 1px solid black;
+
+            /* DEFINE PROPORÇÃO DE ESPAÇO OCUPADO POR UM ITEM */
+            flex-grow: 0;
+        }
+
+        .item1 {
+            flex-grow: 1;
+        }
+
+        .item2 {
+            flex-grow: 2;
+        }
+
+        /* .ordem1 { 
+            order: 1;
+        }
+
+        .ordem2 {
+            order: 2;
+        }
+
+        .ordem3 {
+            order: 3;
+        }
+
+        .ordem4 {
+            order: 4;
+        }*/
+
+    </style>
+</head>
+<body>
+
+    <h1>Flexbox</h1>
+    <div id="conteudo">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item ">3</div>
+        <div class="item ">4</div>
+    </div>
+    
+</body>
+</html>
