@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        var faltasMax = 15
+        var media = 7
+        var nota = prompt("Digite a nota do aluno: ")
+        var faltas = prompt("Digite a quantidade de faltas: ")
+        
+
+        if (nota >= media && faltas <= faltasMax) {
+            document.write("Aluno Aprovado!")
+        } else {
+            document.write("Aluno Reprovado!")
+        }
+        // OPERADOR TERNÁRIO:
+        var resultado = (nota >= media && faltas <= faltasMax) ? "Aprovado" : "Reprovado"
+        document.write(resultado)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
