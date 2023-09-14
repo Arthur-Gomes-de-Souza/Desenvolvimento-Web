@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        var data = new Date()
+
+        // DIA:
+        document.write(data.getDate() + "/")
+
+        // Mês <COMEÇA DO 0>:
+        document.write((data.getMonth() + 1) + "/")
+
+        //ANO:
+        document.write(data.getFullYear() + "<br/>")
+
+        //ADICIONAR / REMOVER DIAS:
+        document.write(data.toString() + "<br/>")
+        data.setDate(data.getDate() + 1)
+        document.write(data.toString())
+
+        //ADICIONAR / REMOVER MÊS:
+        document.write(data.toString() + "<br/>")
+        data.setMonth(data.getMonth() - 1)
+        document.write(data.toString())
+
+        //ADICIONAR / REMOVER ANOS:
+        document.write(data.toString() + "<br/>")
+        data.setFullYear(data.getFullYear() + 1)
+        document.write(data.toString())
+        document.write("<br/><br/>")
+        document.write("<hr/>")
+
+        // DIFERENÇA ENTRE 15/01/2023 E 23/02/2023:
+        var data1 = new Date(2023, 0, 15)
+        var data2 = new Date(2023, 1, 23)
+        var milissegundosEntreDatas = Math.abs(data1.getTime() - data2.getTime())
+        var milissegundosPorDia = (1 * 24 * 60 * 60 * 1000)
+
+        document.write(data1.toString() + "<br/>")
+        document.write(data2.toString() + "<br/>")
+
+        // CONVERTER DATAS PARA ALGO QUE POSSAMOS CALCULAR:
+        document.write(data1.getTime() + "<br/>")
+        document.write(data2.getTime() + "<br/>")
+        // GETTIME() RETORNA OS MILISEGUNDOS DE 1 DE JANEIRO DE 1970 ATÉ A DATA INFORMADA.
+
+        // DIFERENÇA DE MILISSEGUNDOS ENTRE DATA1 E DATA2:
+        document.write(milissegundosEntreDatas)
+        // ABS RETORNA O VALOR ABSOLUTO.
+        document.write(" 1 dia tem: " + milissegundosPorDia + " milissegundos. <br/><br/>")
+        document.write("A diferença entre data1 e data2 é de " + (milissegundosEntreDatas / milissegundosPorDia) + " dias.")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
