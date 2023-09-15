@@ -1,0 +1,11 @@
+.botao {
+    background-color: gray;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}

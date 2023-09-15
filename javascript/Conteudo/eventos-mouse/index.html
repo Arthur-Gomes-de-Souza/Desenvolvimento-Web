@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <script>
+
+        function acao() {
+            alert("Evento disparado")
+        }
+
+    </script>
+</head>
+<body>
+    
+    <div class="botao" onclick="acao()">
+        <h3>Clique Aqui!</h3>
+    </div>
+
+    <div class="botao" ondblclick="acao()">
+        <h3>Clique 2x Aqui!</h3>
+    </div>
+
+    <div class="botao" onmouseup="acao()">
+        <h3>Ao soltar o clique!</h3>
+    </div>
+
+    <div class="botao" onmouseover="acao()">
+        <h3>Aponte Aqui!</h3>
+    </div>
+
+    <div class="botao" onmouseout="acao()">
+        <h3>Tire o mouse Daqui!</h3>
+    </div>
+
+</body>
+</html>
