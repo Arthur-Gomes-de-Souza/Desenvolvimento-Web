@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        var lista_frutas = [];
+
+        lista_frutas[0] = 'Maçã';
+        lista_frutas[1] = 'Uva';
+        lista_frutas[2] = 'Banana';
+        lista_frutas[3] = 'Morango';
+
+        lista_frutas.sort();
+
+        console.log(lista_frutas);
+
+        var numeros = [];
+
+        numeros[0] = 12;
+        numeros[1] = 40;
+        numeros[2] = 3;
+        numeros[3] = 7;
+        numeros[4] = 19;
+        numeros[5] = 1;
+
+        function ordenaNumeros(a, b) {
+            return a - b;
+            // < 0 = A ORDENADO ANTES DE B;
+            // > 0 = B ORDENADO ANTES DE A;
+            // == A ORDEM É MANTIDA;
+        }
+
+        console.log(numeros.sort(ordenaNumeros));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
