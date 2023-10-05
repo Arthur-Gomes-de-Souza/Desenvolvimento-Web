@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        // NETFLIX:
+        var video = Array();
+        video[1] = Array();
+        video[1]['nome'] = 'Lupin';
+        video[1]['categoria'] = 'Ação';
+
+        function getVideo(video) {
+            try {
+                // FORÇANDO O ERRO:
+                console.log(video[0]['nome']);
+
+            } catch(erro) {
+                // CATCH RECEBE COMO PARAMETRO O ERRO OCORRIDO
+                tratarErro(erro);
+                console.log('Agora sim podemos tratar esse erro');
+
+            } finally {
+                console.log('Sempre passa por aqui (try / catch)');
+
+            }
+
+            console.log('A aplicação não morreu');
+        }
+
+        function tratarErro(erro) {
+            console.log(erro);
+        }
+
+        getVideo(video);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
